@@ -79,10 +79,10 @@
 		00831C2928916F1D00576F80 = {
 			isa = PBXGroup;
 			children = (
+				00831C3328916F1D00576F80 /* Products */,
 				00831C3428916F1D00576F80 /* TEST1 */,
 				00831C4B28916F2200576F80 /* TEST1Tests */,
 				00831C5528916F2300576F80 /* TEST1UITests */,
-				00831C3328916F1D00576F80 /* Products */,
 			);
 			sourceTree = "<group>";
 		};

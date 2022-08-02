@@ -44,7 +44,6 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnC:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="x0U-Iw-Fzb"/>
                                                     <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUu-IO-xjF"/>
                                                 </connections>
                                             </button>
@@ -70,7 +69,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yap-2u-F47"/>
-                                                    <action selector="btnMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHw-ah-5FB"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -107,7 +105,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btn7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQA-2d-0Ef"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MEd-j5-4dt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoB-6D-z6s">
@@ -119,7 +117,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79e-4M-RzV"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xR3-tf-lFM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D58-CR-3Q5">
@@ -131,7 +129,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSj-k7-aZW"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lP6-ee-tqK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP8-8u-ZkF">
@@ -144,7 +142,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnMultil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZgR-i1-xxf"/>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HrC-88-7od"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -166,7 +163,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ng8-K1-Gkr"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0y-BU-gnM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxI-96-2u9">
@@ -178,7 +175,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vS-GX-OS6"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iSX-BZ-RVw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-j2-5is">
@@ -190,7 +187,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3I2-h6-g97"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5pR-il-PJm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKo-gA-Pqm">
@@ -202,9 +199,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3wC-Yf-yhj"/>
-                                                    <action selector="btnPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7VK-QM-byc"/>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xMm-8r-clx"/>
+                                                    <action selector="btnMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYc-MM-pAg"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -226,7 +221,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZw-VG-x5N"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yYK-4L-ENA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EM-TZ-GFr">
@@ -238,7 +233,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b7m-Md-Obz"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1bu-Nt-1FX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKA-a4-GMV">
@@ -250,7 +245,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1k-WY-xQ6"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3a-Wn-ncr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yw-zg-PzI">
@@ -262,8 +257,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72D-Ht-GDn"/>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yN3-Kb-ayX"/>
+                                                    <action selector="btnPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvg-dN-be6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -286,7 +280,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btnResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4w-bh-8vp"/>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YbV-h2-kvj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWI-jr-9eJ">
@@ -298,7 +291,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="setUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQC-bg-tvB"/>
+                                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8a-jc-IYO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTw-Xb-Q62">
@@ -335,9 +328,10 @@
                                             <constraint firstAttribute="bottom" secondItem="HTw-Xb-Q62" secondAttribute="bottom" id="vpR-Qw-jAV"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZI-iG-NKW">
-                                        <rect key="frame" x="8" y="231" width="398" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZI-iG-NKW">
+                                        <rect key="frame" x="8" y="224.5" width="398" height="93.5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -347,6 +341,7 @@
                                     <constraint firstAttribute="trailing" secondItem="wmM-ir-w94" secondAttribute="trailing" id="1JO-vx-6bk"/>
                                     <constraint firstItem="1X9-45-Kpi" firstAttribute="leading" secondItem="SHm-zE-wLu" secondAttribute="leading" id="3Xg-c5-xGJ"/>
                                     <constraint firstItem="kw7-qZ-EpT" firstAttribute="top" secondItem="wmM-ir-w94" secondAttribute="bottom" id="4NV-j5-Rih"/>
+                                    <constraint firstItem="XOS-cN-Yfp" firstAttribute="top" secondItem="YZI-iG-NKW" secondAttribute="bottom" id="HrX-bM-lFz"/>
                                     <constraint firstItem="1aL-fX-hRW" firstAttribute="top" secondItem="XOS-cN-Yfp" secondAttribute="bottom" id="IgW-y1-61M"/>
                                     <constraint firstItem="1X9-45-Kpi" firstAttribute="top" secondItem="kw7-qZ-EpT" secondAttribute="bottom" id="JL1-n9-2re"/>
                                     <constraint firstItem="wmM-ir-w94" firstAttribute="leading" secondItem="SHm-zE-wLu" secondAttribute="leading" id="M7Z-Zq-aou"/>
@@ -358,7 +353,9 @@
                                     <constraint firstAttribute="trailing" secondItem="1X9-45-Kpi" secondAttribute="trailing" id="fE3-9W-EIr"/>
                                     <constraint firstItem="XOS-cN-Yfp" firstAttribute="leading" secondItem="SHm-zE-wLu" secondAttribute="leading" id="hQt-2i-bDj"/>
                                     <constraint firstItem="1aL-fX-hRW" firstAttribute="leading" secondItem="SHm-zE-wLu" secondAttribute="leading" id="lSB-LO-ai1"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="YZI-iG-NKW" secondAttribute="trailing" id="uVu-TW-ykH"/>
                                     <constraint firstAttribute="trailing" secondItem="kw7-qZ-EpT" secondAttribute="trailing" id="vgZ-xT-aYt"/>
+                                    <constraint firstItem="YZI-iG-NKW" firstAttribute="leading" secondItem="SHm-zE-wLu" secondAttribute="leadingMargin" id="wFk-HG-xag"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -372,7 +369,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnC" destination="y1w-1B-nDE" id="Ra5-ef-PXt"/>
                         <outlet property="txtView" destination="YZI-iG-NKW" id="3Yo-y6-BNM"/>
                     </connections>
                 </viewController>
@@ -393,6 +389,9 @@
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

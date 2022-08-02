@@ -10,8 +10,8 @@ import UIKit
 class ViewController: UIViewController {
 
     var cal:String!
-    var num1:Int!
-    var num2:Int!
+    var num1:Double!
+    var num2:Double!
     @IBOutlet weak var txtView: UITextField!
     
     
@@ -20,10 +20,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         // btn.layer.coneradius = ???;
 
-                
-                print("Git Tutorial")
-          
-        
     }
 
     @IBAction func btnClear(_ sender: Any) {
@@ -31,72 +27,80 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnNegative(_ sender: Any) {
-        cal="*"
-        let value = txtView.text ?? "0"
-        num1 = Int(value)
-        txtView.text = ""
+        
+        txtView.text = "-"
+        
     }
 
     @IBAction func btnPercent(_ sender: Any) {
         
     }
     @IBAction func btnDivide(_ sender: Any) {
-        cal="/"
+        
         let value = txtView.text ?? "0"
-        num1 = Int(value)
+        num1 =  Double(value)
         txtView.text = ""
+        cal=":"
     }
     @IBAction func btnMultil(_ sender: Any) {
+      
+        let value = txtView.text ?? "0"
+        num1 = Double(value)
+        txtView.text = ""
         cal="*"
-        let value = txtView.text ?? "0"
-        num1 = Int(value)
-        txtView.text = ""
     }
+ 
     @IBAction func btnMinus(_ sender: Any) {
+        
+        let value = txtView.text ?? "0"
+        num1 = Double(value)
+        txtView.text = ""
         cal="-"
-        let value = txtView.text ?? "0"
-        num1 = Int(value)
-        txtView.text = ""
     }
-    
     @IBAction func btnPlus(_ sender: Any) {
-        cal="+"
+        
         let value = txtView.text ?? "0"
-        num1 = Int(value)
+        num1 = Double(value)
         txtView.text = ""
+        cal="+"
     }
     @IBAction func btnResult(_ sender: Any) {
         let value = txtView.text ?? "0"
-                num2 = Int(value)
+                num2 = Double(value)
                 
-                var result = 0
+        var rs :Double
+        rs=0
                 
                 if cal == "+" {
-                    result = num1 + num2
+                    rs = num1 + num2
                 }
                 
                 if cal == "-" {
-                    result = num1 - num2
+                    rs = num1 - num2
                 }
                 
                 if cal == "x" {
-                    result = num1 * num2
+                    rs = num1 * num2
                 }
                 
-                if cal == "/" {
-                    if num2 == 0 {
-                        txtView.text="Loi"
-                    } else {
-                       result = num1 / num2
+                if cal == ":" {
+                    if num2 == 0{
+                        txtView.text="LOI"
                     }
+                    else {
+                        rs = num1 / num2
+                    }
+                    
+                }
                 
-                txtView.text = "\(result)"
+                txtView.text = "\(rs)"
+        
             }
         
-    }
+   
     @IBAction func btnComma(_ sender: Any) {
     }
-    @IBAction func clickButton(_ sender: AnyObject) {
+    @IBAction func clickButton(_ sender:Any){
         guard let button = sender as? UIButton else {
             return
         }

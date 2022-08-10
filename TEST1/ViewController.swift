@@ -22,48 +22,7 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func btnClear(_ sender: Any) {
-        txtView.text=""
-    }
-    
-    @IBAction func btnNegative(_ sender: Any) {
-        
-        txtView.text = "-"
-        
-    }
 
-    @IBAction func btnPercent(_ sender: Any) {
-        
-    }
-    @IBAction func btnDivide(_ sender: Any) {
-        
-        let value = txtView.text ?? "0"
-        num1 =  Double(value)
-        txtView.text = ""
-        cal=":"
-    }
-    @IBAction func btnMultil(_ sender: Any) {
-      
-        let value = txtView.text ?? "0"
-        num1 = Double(value)
-        txtView.text = ""
-        cal="*"
-    }
- 
-    @IBAction func btnMinus(_ sender: Any) {
-        
-        let value = txtView.text ?? "0"
-        num1 = Double(value)
-        txtView.text = ""
-        cal="-"
-    }
-    @IBAction func btnPlus(_ sender: Any) {
-        
-        let value = txtView.text ?? "0"
-        num1 = Double(value)
-        txtView.text = ""
-        cal="+"
-    }
     @IBAction func btnResult(_ sender: Any) {
         let value = txtView.text ?? "0"
                 num2 = Double(value)
@@ -100,6 +59,62 @@ class ViewController: UIViewController {
    
     @IBAction func btnComma(_ sender: Any) {
     }
+    @IBAction func clickCal(_ sender:Any){
+        guard let button = sender as? UIButton else {
+            return
+        }
+        switch button.tag {
+        case 11:
+            txtView.text=""
+            break
+        case 12:
+            txtView.text = "-"
+            break
+        case 14:
+            let value = txtView.text ?? "0"
+            num1 =  Double(value)
+            txtView.text = ""
+            cal=":"
+            break
+        case 15:
+            let value = txtView.text ?? "0"
+            num1 =  Double(value)
+            txtView.text = ""
+            cal="*"
+            break
+        case 16:
+            let value = txtView.text ?? "0"
+            num1 = Double(value)
+            txtView.text = ""
+            cal="-"
+            break
+        case 17:
+            let value = txtView.text ?? "0"
+            num1 = Double(value)
+            txtView.text = ""
+            cal="+"
+            break
+        default:
+            break
+            
+        }
+        
+    }
+    @IBAction func btnPlus(_ sender: Any) {
+    }
+    @IBAction func btnMinus(_ sender: Any) {
+    }
+    @IBAction func btnMultil(_ sender: Any) {
+    }
+    @IBAction func btnDivide(_ sender: Any) {
+    }
+    @IBAction func btnPercent(_ sender: Any) {
+    }
+    @IBAction func btnNegative(_ sender: Any) {
+    }
+    @IBAction func btnClear(_ sender: Any) {
+    }
+    
     @IBAction func clickButton(_ sender:Any){
         guard let button = sender as? UIButton else {
             return

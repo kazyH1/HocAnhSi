@@ -22,7 +22,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOS-cN-Yfp">
                                         <rect key="frame" x="0.0" y="318" width="414" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg2-OR-tRH">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg2-OR-tRH">
                                                 <rect key="frame" x="103.5" y="0.0" width="103.5" height="100"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
@@ -32,10 +32,12 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jx1-rj-vtl"/>
+                                                    <action selector="btnNega:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNY-K2-usj"/>
                                                     <action selector="btnNegative:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBW-2D-n0o"/>
+                                                    <action selector="clickCal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDB-QZ-u0e"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-1B-nDE">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-1B-nDE">
                                                 <rect key="frame" x="0.0" y="0.0" width="103.5" height="100"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
@@ -44,10 +46,11 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUu-IO-xjF"/>
+                                                    <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTN-df-xxe"/>
+                                                    <action selector="clickCal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KQH-vS-h5w"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaK-UQ-UyT">
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaK-UQ-UyT">
                                                 <rect key="frame" x="207" y="0.0" width="103.5" height="100"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
@@ -56,10 +59,11 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8L-ty-78o"/>
+                                                    <action selector="btnPercent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCm-z8-x5F"/>
+                                                    <action selector="clickCal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJ2-Kr-yBE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jA2-MU-zLB">
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jA2-MU-zLB">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
@@ -68,7 +72,8 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yap-2u-F47"/>
+                                                    <action selector="btnDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="07w-qX-PQQ"/>
+                                                    <action selector="clickCal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtO-y1-doG"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -132,7 +137,7 @@
                                                     <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lP6-ee-tqK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP8-8u-ZkF">
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP8-8u-ZkF">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
@@ -141,7 +146,8 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnMultil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZgR-i1-xxf"/>
+                                                    <action selector="btnMultil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mu3-zg-9WJ"/>
+                                                    <action selector="clickCal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ffc-4L-BAO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -190,7 +196,7 @@
                                                     <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5pR-il-PJm"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKo-gA-Pqm">
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKo-gA-Pqm">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
@@ -199,7 +205,8 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYc-MM-pAg"/>
+                                                    <action selector="btnMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SPG-KC-zy6"/>
+                                                    <action selector="clickCal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvU-DY-tpj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -248,7 +255,7 @@
                                                     <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3a-Wn-ncr"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yw-zg-PzI">
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yw-zg-PzI">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
@@ -257,7 +264,8 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="btnPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvg-dN-be6"/>
+                                                    <action selector="btnPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VIn-1k-hDd"/>
+                                                    <action selector="clickCal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p4H-9S-613"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -270,7 +278,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1X9-45-Kpi">
                                         <rect key="frame" x="0.0" y="718" width="414" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-L6-K1q">
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-L6-K1q">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>

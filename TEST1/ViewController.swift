@@ -8,11 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     var cal:String!
     var num1:Double!
     var num2:Double!
     @IBOutlet weak var txtView: UITextField!
+    
     
     
     override func viewDidLoad() {
@@ -29,16 +29,15 @@ class ViewController: UIViewController {
                 
         var rs :Double
         rs=0
-                
+                ///Dya nua
                 if cal == "+" {
                     rs = num1 + num2
                 }
-                
                 if cal == "-" {
                     rs = num1 - num2
                 }
                 
-                if cal == "x" {
+                if cal == "*" {
                     rs = num1 * num2
                 }
                 
@@ -49,16 +48,15 @@ class ViewController: UIViewController {
                     else {
                         rs = num1 / num2
                     }
-                    
                 }
                 
                 txtView.text = "\(rs)"
         
             }
+ 
         
    
-    @IBAction func btnComma(_ sender: Any) {
-    }
+
     @IBAction func clickCal(_ sender:Any){
         guard let button = sender as? UIButton else {
             return
@@ -70,29 +68,25 @@ class ViewController: UIViewController {
         case 12:
             txtView.text = "-"
             break
-        case 14:
+        case 13:
             let value = txtView.text ?? "0"
-            num1 =  Double(value)
-            txtView.text = ""
-            cal=":"
+            num1 = Double(value)
+            txtView.text = "\(num1/100)"
+            break
+        case 14:
+            caculator(valueInput: ":")
             break
         case 15:
-            let value = txtView.text ?? "0"
-            num1 =  Double(value)
-            txtView.text = ""
-            cal="*"
+            caculator(valueInput: "*")
             break
         case 16:
-            let value = txtView.text ?? "0"
-            num1 = Double(value)
-            txtView.text = ""
-            cal="-"
+            caculator(valueInput: "-")
             break
         case 17:
-            let value = txtView.text ?? "0"
-            num1 = Double(value)
-            txtView.text = ""
-            cal="+"
+            caculator(valueInput: "+")
+            break
+        case 19:
+            
             break
         default:
             break
@@ -100,76 +94,45 @@ class ViewController: UIViewController {
         }
         
     }
-    @IBAction func btnPlus(_ sender: Any) {
-    }
-    @IBAction func btnMinus(_ sender: Any) {
-    }
-    @IBAction func btnMultil(_ sender: Any) {
-    }
-    @IBAction func btnDivide(_ sender: Any) {
-    }
-    @IBAction func btnPercent(_ sender: Any) {
-    }
-    @IBAction func btnNegative(_ sender: Any) {
-    }
-    @IBAction func btnClear(_ sender: Any) {
-    }
     
-    @IBAction func clickButton(_ sender:Any){
+    @IBAction func clickNumber(_ sender:Any){
         guard let button = sender as? UIButton else {
             return
         }
         
         switch button.tag {
         case 1:
-            var value = txtView.text ?? ""
-            value += "1"
-            txtView.text=value
+            number(valueInput: "1")
             break
         case 2:
-            var value = txtView.text ?? ""
-            value += "2"
-            txtView.text=value
+            number(valueInput: "2")
             break
         case 3:
-            var value = txtView.text ?? ""
-            value += "3"
-            txtView.text=value
+            number(valueInput: "3")
             break
         case 4:
-            var value = txtView.text ?? ""
-            value += "4"
-            txtView.text=value
+            number(valueInput: "4")
             break
         case 5:
-            var value = txtView.text ?? ""
-            value += "5"
-            txtView.text=value
+            number(valueInput: "5")
             break
         case 6:
-            var value = txtView.text ?? ""
-            value += "6"
-            txtView.text=value
+            number(valueInput: "6")
             break
         case 7:
-            var value = txtView.text ?? ""
-            value += "7"
-            txtView.text=value
+            number(valueInput: "7")
             break
         case 8:
-            var value = txtView.text ?? ""
-            value += "8"
-            txtView.text=value
+            number(valueInput: "8")
             break
         case 9:
-            var value = txtView.text ?? ""
-            value += "9"
-            txtView.text=value
+            number(valueInput: "9")
             break
         case 0:
-            var value = txtView.text ?? ""
-            value += "0"
-            txtView.text=value
+//            var value = txtView.text ?? ""
+//            value += "0"
+//            txtView.text=value
+            number(valueInput: "0")
             break
         
         default:
@@ -177,5 +140,16 @@ class ViewController: UIViewController {
         }
     }
     
+    func number(valueInput : String) {
+        var value = txtView.text ?? ""
+        value += valueInput
+        txtView.text=value
+    }
+    func caculator(valueInput : String){
+        let value = txtView.text ?? "0"
+        num1 = Double(value)
+        txtView.text = ""
+        cal=valueInput
+    }
 }
 
